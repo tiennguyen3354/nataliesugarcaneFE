@@ -1,20 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Outfit&display=swap');
 
-.navBackground { 
-    background-color: rgb(137, 250, 131);
+*{
+    margin: 0rem;
+    padding: 0rem;
 }
-.center-button-container {
-    height: 87vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("pictures/nataliebackground.jpg");
-    background-size: cover;
+html{
+    
+    font-size: 62%;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
 
-  }
-.menuButton {
-    border: none;
+}
+
+nav{
+    
+    padding: 3rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    background-color:whitesmoke;
+    
+}
+.logo{
+    
+    font-size: 2rem;
+    
+    
+}
+.logo a{
+    text-decoration: none;
+    color:rgba(59, 165, 32, 0.974);
+}
+.logo a:hover{
+    color:black;
+}
+.navList{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navList li{
+    list-style:none;
+    font-size: 1.5rem;
+    margin:0rem 2rem;
+}
+
+.navList a{
+    text-decoration: none ;
     color: black;
-    margin-top: 200px; 
-    padding: 20px 50px;
-    background-color:rgb(137, 250, 131);
+    font-weight: 900;
+
+}
+
+.navList a:hover{
+    color:green;
+}
+.mainPage{
+    border-radius: 1rem 1rem 0rem 0rem;
+    text-align: center;
+    background-image: url("mainbackground.jpg");
+    background-size:cover;
+    height: 70rem;
+    
+}
+.text{
+    color: white;
+    padding: 40rem 0rem 0rem 0rem;
+    
+}
+.text h3{
+   
+    font-weight: 300;
+    text-shadow: .2rem .2rem black;
+}
+.text h1{
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    text-shadow: .2rem .2rem black;
+}
+.text a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 2rem 4rem;
+    background-color: rgb(84, 212, 62);
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.text a:hover{
+    background-color: white;
+    color: green;
+    transition:ease-in-out .2s;
+}
+.burger{
+    display:none;
+}
+.bar{
+
+    display: block;
+    width: 3rem;
+    height: .5rem;
+    margin: .5rem auto;
+    background-color: black;
+        
+}
+
+@media screen and (max-width: 500px){
+   
+    nav {
+        padding: 3rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        background-color: whitesmoke;
+    }
+    .navList{
+        overflow: hidden;
+        background-color:green;
+        left:100rem;
+        right:0rem;
+        top:8rem;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: .5s ease-out;
+
+   }
+   
+    .navList li{
+    margin: .1rem;
+    font-size: 2.5rem;
+   }
+   
+   .burger{
+        display: block;
+        transition: .5s ease-out;
+   }
+   .burger.active .bar:nth-child(2) {
+       opacity: 0;
+   }
+
+   .burger.active .bar:nth-child(1) {
+       transform: translateY(1rem) rotate(45deg);
+       transition: ease-in-out .5s;
+   }
+
+   .burger.active .bar:nth-child(3) {
+       transform: translateY(-1rem) rotate(-45deg);
+       transition: ease-in-out .5s;
+   }
+   
+   .menu{
+       overflow: hidden;
+       background-color: white;
+       left: 0rem;
+       right: 0rem;
+       top: 8rem;
+       position: absolute;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       transition: .2s ease-in-out;
+   }
 }
