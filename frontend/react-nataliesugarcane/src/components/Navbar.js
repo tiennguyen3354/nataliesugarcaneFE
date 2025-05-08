@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../asset/logo.png';
+
+
 import './Navbar.css';
 
 const Navbar = () => {
@@ -11,8 +14,11 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">Natalie's Drinks</div>
-
+        <div className="navbar-logo">
+            <Link to="/">
+                <img src={logo} alt="Natalie's Sugarcane" className="logo-img" />
+            </Link>
+        </div>
       <div className="hamburger" onClick={toggleMenu}>
         <span className="bar"></span>
         <span className="bar"></span>

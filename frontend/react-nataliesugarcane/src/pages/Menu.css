@@ -1,0 +1,138 @@
+/* Base styles for the menu */
+.menu {
+    padding: 2rem;
+    background-color: #FFFBEA;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #76b852;
+  }
+  
+  .category-section {
+    margin-bottom: 3rem;
+  }
+  
+  .category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 1rem;
+    background-color: #E8F5E9; 
+    color: #4B4B4B;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #C8E6C9; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-header:hover {
+    background-color: #D0ECD0;
+  }
+  
+  .category-section h2 {
+    margin: 0;
+  }
+  
+  .category-section span {
+    font-size: 1.5rem;
+  }
+  
+  .drink-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .drink-card {
+    width: 250px;
+    background-color: #ffffff;
+    border: 2px solid #8DC26F;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .drink-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .drink-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .drink-info {
+    margin-top: 10px;
+  }
+  
+  .drink-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #4B4B4B;
+  }
+  
+  .drink-info p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #76b852;
+    margin-top: 5px;
+  }
+  
+  /* Responsive for smaller screens */
+  @media (max-width: 768px) {
+    .drink-gallery {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .drink-card {
+      width: 90%;
+      max-width: 350px;
+    }
+  
+    .category-header {
+      font-size: 1.5rem;
+    }
+  
+    .category-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .category-section span {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .category-header {
+      font-size: 1.3rem;
+    }
+  
+    .drink-card {
+      width: 95%;
+      max-width: 320px;
+    }
+  
+    .category-section span {
+      font-size: 1.1rem;
+    }
+  }
+  

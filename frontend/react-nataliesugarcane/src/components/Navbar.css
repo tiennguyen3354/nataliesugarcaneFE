@@ -1,6 +1,6 @@
 .navbar {
-    background-color: #2e8b57;
-    color: white;
+    background-color: #000000;
+    color: rgb(200, 197, 176);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,10 +9,13 @@
     z-index: 1000;
   }
   
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+  .navbar-logo img.logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    margin-right: 1rem;
   }
+  
   
   .nav-links {
     display: flex;
@@ -51,7 +54,7 @@
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #2e8b57;
+        background-color: #000000;
         display: none;
         padding: 1rem 0;
         text-align: center;
