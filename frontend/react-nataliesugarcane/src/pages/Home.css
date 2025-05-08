@@ -1,0 +1,45 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  .hero-text {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    max-width: 90%;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+  }
+  .menu-button {
+    background-color: #2e8b57;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  .menu-button:hover {
+    background-color: #248b46;
+  }
