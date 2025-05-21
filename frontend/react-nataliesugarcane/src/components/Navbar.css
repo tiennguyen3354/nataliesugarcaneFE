@@ -1,16 +1,17 @@
 .navbar {
-    background-color: #000000;
+    background-color: #F1F8E9;
     color: rgb(200, 197, 176);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
     position: relative;
+    padding: .8rem 3rem;
     z-index: 1000;
+
   }
   
   .navbar-logo img.logo-img {
-    height: 50px;
+    height: 80px;
     width: auto;
     object-fit: contain;
     margin-right: 1rem;
@@ -24,7 +25,7 @@
   }
   
   .nav-links li a {
-    color: white;
+    color: rgb(53, 140, 55);
     text-decoration: none;
     font-weight: bold;
   }
@@ -39,7 +40,7 @@
   .bar {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: rgb(53, 140, 55);
     border-radius: 3px;
   }
   
@@ -54,7 +55,7 @@
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #000000;
+        background-color: #F1F8E9;
         display: none;
         padding: 1rem 0;
         text-align: center;

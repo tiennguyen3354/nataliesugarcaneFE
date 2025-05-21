@@ -1,11 +1,15 @@
+.home { 
+  background-color: #FFFBEA;
+}
 .hero {
     position: relative;
     height: 100vh;
     width: 100%;
     overflow: hidden;
+    
   }
   
-  .hero img {
+  .hero img{
     width: 100%;
     height: 100%;
     object-fit: cover; 
@@ -43,3 +47,116 @@
   .menu-button:hover {
     background-color: #248b46;
   }
+  /* body css */
+  .body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #4B4B4B;
+  }
+.about-text { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 0rem;
+  font-size: 2.5rem;
+}
+
+.about-text h3{ 
+  border-bottom: solid #248b46 .1rem;
+}
+
+
+.about-body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  }
+
+.story,
+.about-image,
+.vision {
+  color: #4B4B4B;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+.story h3{
+  font-weight: 400;
+  font-style: italic;
+}
+.about-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.story h1, .vision h1 { 
+  margin-bottom: 0rem;
+}
+.vision ul{ 
+  list-style: none;
+}
+
+  /* end of body css */
+
+ 
+  @media (max-width: 768px) {
+  .hero-text {
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    width: 90%;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+
+    .about-body {
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .story h3, p{ 
+    padding: 0rem 5rem;
+  }
+
+  .story h1{
+    margin-top: 4rem;
+    margin-bottom: 0rem;
+  }
+  .vision ul, p{ 
+    padding: 0rem 5rem;
+  }
+  .vision h1{ 
+     margin-top: 4rem;
+    margin-bottom: 0rem;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .about-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .about-text h1 {
+    font-size: 1.8rem;
+  }
+
+}
+
+

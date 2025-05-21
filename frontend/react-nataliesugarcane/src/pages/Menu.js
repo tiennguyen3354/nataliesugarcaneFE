@@ -31,12 +31,11 @@ const Menu = () => {
     return <div>Loading...</div>;
   }
 
-  
   if (error) {
     return <div>Error: {error}</div>;
   }
 
-  
+
   const groupedDrinks = drinks.reduce((acc, drink) => {
     const { category } = drink;
     if (!acc[category]) {
@@ -52,7 +51,11 @@ const Menu = () => {
 
   return (
     <div className="menu">
-      <h1>Our Menu</h1>
+      <div className='menu-text-container'> 
+        <h1 className="menu-text">Our Menu</h1>
+        <p>Every sip of a fresh drink is a reminder that simple pleasures are the sweetest.</p>
+      </div>
+    
       {Object.keys(groupedDrinks).map((category) => (
         <div key={category} className="category-section">
           <div className="category-header" onClick={() => handleCategoryClick(category)}>
@@ -63,11 +66,9 @@ const Menu = () => {
             <div className="drink-gallery">
               {groupedDrinks[category].map((drink) => (
                 <div key={drink.id} className="drink-card">
-                  <img src="https://via.placeholder.com/250" alt={drink.name} className="drink-img" />
+                  <img src="https://picsum.photos/200" alt={drink.name} className="drink-img" />
                   <div className="drink-info">
                     <h3>{drink.name}</h3>
-                    <p>{drink.description}</p>
-                    <p className="price">${drink.price}</p>
                   </div>
                 </div>
               ))}

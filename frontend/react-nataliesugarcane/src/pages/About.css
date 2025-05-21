@@ -1,80 +1,73 @@
-.about-page {
-    background-color: #FFFBEA;
-    padding: 2rem;
-    font-family: 'Segoe UI', sans-serif;
-    color: #4B4B4B;
-    line-height: 1.7;
+.about-page { 
+  background-color: #FFFBEA;
+}
+.location {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.location-1,
+.location-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.location img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.location h1 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.location p {
+  margin: 0.25rem 0;
+  color: #333;
+  text-align: left;
+  font-size: 0.95rem;
+
+}
+.location-heading {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.location-heading h3 {
+  font-size: 1rem;
+  color: #4B4B4B;
+  border-bottom: solid #248b46 .1rem;
+  border-top: solid #248b46 .1rem;
+  display: inline-block;
+  padding: .3rem 0rem;
+  margin-bottom: 0rem;
+  margin-top: 3rem;
+}
+
+
+@media (max-width: 768px) {
+  .location-1,
+  .location-2 {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .about-hero {
-    text-align: center;
-    margin-bottom: 3rem;
+
+  .location img {
+   
+    width: 100px;
+    height: auto;
   }
-  
-  .about-hero h1 {
-    font-size: 2.5rem;
-    color: #76b852;
-  }
-  
-  .about-hero p {
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
-  .about-section {
-    margin-bottom: 2.5rem;
-  }
-  
-  .about-section h2 {
-    font-size: 1.8rem;
-    color: #8DC26F;
-    margin-bottom: 1rem;
-  }
-  
-  .about-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .about-section li {
-    margin-bottom: 0.8rem;
-    font-size: 1.05rem;
-  }
-  
-  .about-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-    margin-top: 3rem;
-  }
-  
-  .about-gallery img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease;
-  }
-  
-  .about-gallery img:hover {
-    transform: scale(1.03);
-  }
-  
-  /* Mobile responsiveness */
-  @media (max-width: 768px) {
-    .about-hero h1 {
-      font-size: 2rem;
-    }
-  
-    .about-gallery {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .about-gallery img {
-      width: 90%;
-    }
-  }
-  
+}
