@@ -6,9 +6,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p><FaPhoneAlt /> (123) 456-7890</p>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+        <a href="https://www.instagram.com/nataliesugarcane/?hl=en" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+        <a href="https://www.facebook.com/nataliesugarcane/" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
       </div>
       <p className="footer-note">© 2025 Natalie's Sugarcane & Dessert. All rights reserved.</p>
     </footer>

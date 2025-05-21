@@ -9,7 +9,7 @@ const Menu = () => {
 
   useEffect(() => {
    
-    fetch('http://168.231.67.207:8282/category')
+    fetch('https://api.nataliesugarcaneanddesserts.com/category')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Failed to fetch drinks');
