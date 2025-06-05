@@ -8,13 +8,13 @@ function AdminPanel() {
     useEffect(() => {
     const token = localStorage.getItem('token');
     if (!token) {
-      navigate('/login'); // redirect to login if no token
+      navigate('/login');
     }
     }, [navigate]);
 
     const handleLogout = () => {
-    localStorage.removeItem('token'); // Remove token on logout
-    navigate('/login');               // Redirect to login page
+    localStorage.removeItem('token'); 
+    navigate('/login');             
     };
 
   const [items, setItems] = useState([]);
@@ -37,7 +37,7 @@ function AdminPanel() {
     image: null,
   });
 
-  const API_URL = 'http://localhost:8282';
+  const API_URL = 'https://api.nataliesugarcaneanddesserts.com';
 
   useEffect(() => {
     fetchItems();

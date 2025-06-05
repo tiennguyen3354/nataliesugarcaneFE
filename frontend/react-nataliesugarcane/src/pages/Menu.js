@@ -66,7 +66,7 @@ const Menu = () => {
             <div className="drink-gallery">
               {groupedDrinks[category].map((drink) => (
                 <div key={drink.id} className="drink-card">
-                  <img src="https://picsum.photos/200" alt={drink.name} className="drink-img" />
+                  <img src={drink.image} alt={drink.name} className="drink-img" />
                   <div className="drink-info">
                     <h3>{drink.name}</h3>
                   </div>
