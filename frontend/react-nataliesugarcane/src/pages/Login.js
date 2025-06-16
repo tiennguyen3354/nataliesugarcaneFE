@@ -9,7 +9,7 @@ function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch('https://nataliesugarcaneanddesserts.com/login', {
+    const res = await fetch('http://localhost:8282/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username, password }),

@@ -166,9 +166,9 @@ function AdminPanel() {
   return (
     <div style={{ maxWidth: '900px', margin: 'auto', padding: '2rem' }}>
       <h2>Admin Panel</h2>
-        <button onClick={handleLogout} style={{ padding: '0.5rem 1rem' }}>
+        {/* <button onClick={handleLogout} style={{ padding: '0.5rem 1rem' }}>
           Logout
-        </button>
+        </button> */}
       {editing && (
         <div style={{ marginBottom: '2rem', border: '1px solid #ccc', padding: '1rem' }}>
           <h3>Edit Item</h3>

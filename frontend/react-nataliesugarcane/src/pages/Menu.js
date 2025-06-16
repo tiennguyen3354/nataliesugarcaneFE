@@ -66,7 +66,15 @@ const Menu = () => {
             <div className="drink-gallery">
               {groupedDrinks[category].map((drink) => (
                 <div key={drink.id} className="drink-card">
-                  <img src={drink.image} alt={drink.name} className="drink-img" />
+                 {drink.image ? (
+                  <img
+                    src={`data:image/jpeg;base64,${drink.image}`}
+                    alt={drink.name}
+                    style={{ width: '150px', height: '150px', objectFit: 'cover', borderRadius: '6px' }}
+                  />
+                  ) : (
+                  <span>No Image</span>
+                )}
                   <div className="drink-info">
                     <h3>{drink.name}</h3>
                   </div>
