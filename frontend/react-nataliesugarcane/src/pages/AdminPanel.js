@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './AdminPanel.css';
+
 
 function AdminPanel() {
 
@@ -164,13 +166,13 @@ function AdminPanel() {
   };
 
   return (
-    <div style={{ maxWidth: '900px', margin: 'auto', padding: '2rem' }}>
+    <div className='admin-container'>
       <h2>Admin Panel</h2>
-        {/* <button onClick={handleLogout} style={{ padding: '0.5rem 1rem' }}>
+        <button onClick={handleLogout} style={{ padding: '0.5rem 1rem' }}>
           Logout
-        </button> */}
+        </button>
       {editing && (
-        <div style={{ marginBottom: '2rem', border: '1px solid #ccc', padding: '1rem' }}>
+        <div className='edit-section'>
           <h3>Edit Item</h3>
           <input
             name="name"
@@ -236,6 +238,7 @@ function AdminPanel() {
               <td style={{ textAlign: 'center' }}>
                 {i.image ? (
                   <img
+                    className='adminImg'
                     src={`data:image/jpeg;base64,${i.image}`}
                     alt={i.name}
                     style={{ width: '200px', height: '200px', objectFit: 'cover', borderRadius: '6px' }}
@@ -259,7 +262,7 @@ function AdminPanel() {
         </tbody>
       </table>
 
-      <div style={{ border: '1px solid #ccc', padding: '1rem' }}>
+      <div className='add-section'>
         <h3>Add New Item</h3>
         <input
           name="name"
